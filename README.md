@@ -1,7 +1,3 @@
-Here's the revised README for the Peer-to-Peer Lending Platform, customized for Justin Anakor:
-
----
-
 <a id="readme-top"></a>
 <!-- PROJECT LOGO -->
 <br />
@@ -20,19 +16,20 @@ Here's the revised README for the Peer-to-Peer Lending Platform, customized for 
 
 ## Getting Started
 
-Below are the instructions to get a local copy up and running.
+To get a local copy up and running, follow the instructions below.
 
 ### Prerequisites
 
-- **Node.js 20 or above** - JavaScript runtime for building and running the dApp.
+- **Node.js 20 or above** - Required for building and running the dApp.
 - **Cartesi CLI** - Command-line tool for managing Cartesi Rollups.
 - **Docker with WSL2 backend (for Windows users)** - Required for containerization and running the dApp in a compatible environment.
+- **Cartesi Rollups Environment** - Ensure that you have the Cartesi Rollups environment set up, including a local blockchain node and Rollups server.
 
 ### Installation
 
 1. **Clone the Repository**
    ```sh
-   git clone https://github.com/just-debug-arch/Peer-to-Peer-Lending-Platform
+   git clone https://github.com/just-debug-arch/Peer-to-Peer-Lending-Platform.git
    ```
 
 2. **Install NPM Packages**
@@ -41,21 +38,31 @@ Below are the instructions to get a local copy up and running.
    npm install
    ```
 
-3. **Start the Application**
-   Run the application using the following command:
+3. **Set Up the Cartesi Rollups Environment**
+   - Follow the [Cartesi Rollups Quickstart Guide](https://cartesi.io/docs/quickstart) to set up the required local environment.
+   - Ensure your local blockchain node and Rollups server are running.
+
+4. **Build the Application**
+   Build the Cartesi Rollups dApp using the Cartesi CLI:
    ```sh
-   npm start
+   cartesi build
    ```
 
-## Usage
+5. **Run the Application**
+   Start the Cartesi Rollups dApp using the following command:
+   ```sh
+   cartesi run
+   ```
 
-The primary functionalities of the platform are managed through the following controller functions:
+### Running the dApp
 
-- `createLoanRequest`: Allows users to create a new loan request.
-- `getAllLoanRequests`: Retrieves a list of all loan requests.
-- `getLoanRequestById`: Fetches details of a specific loan request by its ID.
-- `provideLoan`: Enables a user to provide a loan to a specific request.
-- `getLoanById`: Retrieves details of a specific loan by its ID.
+To interact with the Peer-to-Peer Lending Platform, you can use the provided controller functions within the application:
+
+- `createLoanRequest`: Create a new loan request on the platform.
+- `getAllLoanRequests`: Retrieve all existing loan requests.
+- `getLoanRequestById`: Fetch details of a specific loan request by its ID.
+- `provideLoan`: Provide a loan to a specific request.
+- `getLoanById`: Retrieve details of a specific loan by its ID.
 
 ## Directory Structure
 
@@ -68,7 +75,7 @@ The primary functionalities of the platform are managed through the following co
 
 ## Contributing
 
-Contributions are welcome and appreciated. To contribute, follow these steps:
+Contributions are welcome! To contribute:
 
 1. **Fork the Project**
 2. **Create Your Feature Branch**: (`git checkout -b feature/YourFeature`)
@@ -85,3 +92,7 @@ This project is distributed under the MIT License. See `LICENSE.txt` for more in
 Justin Anakor - [justinanakor@gmail.com](mailto:justinanakor@gmail.com) - [GitHub](https://github.com/just-debug-arch)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+---
+
+This README now includes the essential `cartesi build` and `cartesi run` commands for setting up and running the dApp using the Cartesi CLI.
