@@ -2,7 +2,7 @@
     "name": "peer-to-peer-lending-platform",
     "version": "1.0.0",
     "main": "index.js",
-    "repository": "https://github.com/ekeesther234/anonymous-lend-dapp.git",
+    "repository": "https://github.com/just-debug-arch/Peer-to-Peer-Lending-Platform",
     "author": "justin anakor <justinanakor@gmail.com>",
     "license": "MIT",
     "private": true,
